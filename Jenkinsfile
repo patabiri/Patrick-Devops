@@ -8,7 +8,7 @@ pipeline {
 */
     environment {
         registry = "patabiri/cicd"
-        registryCredential = 'dockerhub'
+        registryCredential = 'jenkins-docker'
     }
 
     stages{
