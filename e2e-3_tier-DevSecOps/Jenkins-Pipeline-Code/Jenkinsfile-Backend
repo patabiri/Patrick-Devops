@@ -21,7 +21,7 @@ pipeline {
         stage('Checkout from Git') {
             steps {
                 // Assuming Git credentials and repository are correctly setup
-                git branch: 'e2e-3-tier-DevSecOps', credentialsId: 'github-token', url: 'https://github.com/patabiri/Jnr-Devops.git'
+                git branch: 'DevSecOps_Project', credentialsId: 'github-token', url: 'https://github.com/patabiri/Jnr-Devops.git'
             }
         }
         stage('Sonarqube Analysis') {
@@ -83,7 +83,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                 git branch: 'e2e-3-tier-DevSecOps', credentialsId: 'github-token', url: 'https://github.com/patabiri/Jnr-Devops.git'
+                 git branch: 'DevSecOps_Project', credentialsId: 'github-token', url: 'https://github.com/patabiri/Jnr-Devops.git'
             }
         }
         stage('Update Kubernetes Deployment') {
