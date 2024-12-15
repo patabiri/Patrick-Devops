@@ -93,7 +93,7 @@ pipeline {
             }
             steps {
                 script {
-                    dir('Kubernetes-Manifests-file/Backend') {
+                    dir('e2e-3_tier-DevSecOps/Kubernetes-Manifests-file/Backend/deployment.yaml') {
                         withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
                             sh '''
                                 git config user.email "patabiri99@gmail.com"
